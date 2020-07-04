@@ -16,7 +16,7 @@ from decimal import *
 import math
 
 
-#decided not to use the home page so ignore
+#loads the maze WebGL challenge
 def homePage(request):
 	template = loader.get_template('MazeHTML5/index.html')
 	return render(request, 'MazeHTML5/index.html')
@@ -81,8 +81,8 @@ def loginResponse(request):
 @permission_classes([IsAuthenticated])
 def scoreResponse(request):
     if request.method == 'POST':
-        userN = request.POST['username']
-        score = request.POST['time']
+        userN = request.POST['probably best not to have the real post request on here right now']
+        score = request.POST['probably best not to have the real post request on here right now']
         
         try:
             highscore = highScores.objects.get(userName = userN)
