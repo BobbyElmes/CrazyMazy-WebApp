@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="utf-8" />
+    {% load static %}
+    <link rel="stylesheet" type = "text/css" href="{% static 'css/styles.css' %}">
+    <title>CRAZY MAZY</title>
+</head>
+<body>
+    
+    
+    <div class="imageContainer">
+        <div class="mazeImages"></div>
+    </div>
+    <div class="image2Container">
+        <div class="donutIcon"></div>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class = "usernameContainer">
+            <label for="username" class= "userLabel">Username:</label>
+                <input type="text" class="username" id="username" name="username">
+            <label for="username" class= "userSignError">{{userSignError}}</label>
+        </div>
+        <div class = "passwordContainer">
+            <label for="pass" class = "passLabel">Password:</label>
+                <input type="password" id="pass" name="password"
+                       minlength="8" required>
+            <label for="password" class= "userSignError">{{userPassError}}</label>
+        </div>
+        <div class = "registerContainer">
+            <button type="submit" onclick="javascript: form.action='/userRegister/';" class = "register">Register</button>
+        </div>
+        <div class = "loginContainer">
+            <button type="submit" onclick="javascript: form.action='/userLogin/';" class="login" >Login</button>
+        </div>
+    </form>
+
+        
+    
+
+    
+    
+
+    <h1><b>CRAZY MAZY</b></h1>
+</body>
+</html>

@@ -1,0 +1,135 @@
+﻿@font-face {
+  font-family: mazeFont;
+  src: url("../fonts/neutrondance.ttf");
+}
+
+
+body {
+  background-color: rgb(0,0,0);
+  
+}
+
+
+
+.mazeImages{
+    height:500px;
+    width:500px;
+    background-image: url("../images/MapIcon.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.imageContainer{
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.donutIcon{
+    height:500px;
+    width:500px;
+    background-image: url("../images/donut icon.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.image2Container{
+    transform: rotate(20deg);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+div{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginContainer{
+    position: absolute;
+  top: 70%;
+  left: 20%;
+}
+
+.registerContainer{
+    position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+button{
+    background: rgb(84, 32, 35);
+    color: rgb(255, 90, 110);
+    position: absolute;
+    font-family: mazeFont;
+    border: none;
+    
+    text-decoration: none;
+    font-size: 300%;
+}
+
+button:hover{
+    background-color:white;
+}
+
+.login{
+    padding: 30px 90px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-family: mazeFont;
+    color: rgb(255, 90, 110);
+}
+
+.usernameContainer{
+    position: absolute;
+      top: 40%;
+      left: 50%;
+    text-align:center
+}
+
+.userSignError{
+text-align: center;
+font-size: 60%;
+color: rgb(255, 40, 40);
+position: relative;
+top: 7px;
+}
+
+.userLabel{
+
+}
+
+.userName{
+
+}
+
+.passLabel{
+    text-align: center;
+}
+
+.passwordContainer{
+position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+}
+
+.register{
+    padding: 30px 30px;
+}
+
+h1 {
+    font-family: mazeFont;
+    
+    position: absolute;
+    top: -2.5%;
+    left: 30%;
+    color: rgb(255, 90, 110);
+    font-size: 500%;
+}
